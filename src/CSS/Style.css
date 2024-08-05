@@ -1,8 +1,203 @@
-section{
-    width: 100%;
-    height: 658px;
+body{
     margin: 0 auto;
+    width: 85%;
 }
-th{
-     transform: translateX(285px);
+/*Home css*/
+.Homepage{
+    display: flex;
+    gap: 54px;
+    transform: translate(178px,66px);
+    margin-top:0px;
+}
+a{
+    text-decoration: none;
+}
+/* Education css*/
+.parent{
+    margin: 10px auto;
+}
+.parent-1,.parent-2,.parent-3,.parent-4{
+    width: 30%;
+    height: 65px;
+    margin: 5px;
+    background-color: rgb(180, 152, 206);
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 504;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+.child-1,.child-2,.child-3,.child-4{
+    width:231px;
+    height: 42px;
+    transform: translate(158px,-22px);
+    font-size: 14px;
+    font-weight: 511;
+    cursor: pointer;
+    background-color: rgb(180, 152, 206);
+    border-radius: 8px;
+    margin-top:16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    transform: translate(169px,-42px);
+}
+textarea{
+    transform: translate(-85px,2px);
+}
+.button-1{
+    transform: translate(-84px,-13px);
+    background-color: rgb(16, 247, 182);
+    font-size: 14px;
+    font-weight: 502;
+    width: 55px;
+    padding: 5px;
+    border-radius: 6px;
+    outline: none;
+}
+/* DownArrowButton.css */
+.arrow-down {
+    width: 1px;
+    height: 1px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid black;
+    transform: translate(22px,5px);
+  }
+  /* Label css*/
+.box{
+   transform: translate(424px,22px);
+}
+.box1{
+    transform: translate(-60px,5px);
+    width: 36px;
+    height: 18px;
+}
+  /* bluerr css*/
+  .blur-container {
+    transition: filter 0.8s ease; /* Smooth transition for blur effect */
+  }
+  .blurred {
+    filter: blur(6px); /* Adjust the blur radius as needed */
+  }
+
+
+  /*Address css*/
+.parent-2{
+    transform: translate(0px,18px);
+}
+.child-21,.child-22{
+    width: 231px;
+    height: 44px;
+    transform: translate(158px,22px);
+    font-size: 14px;
+    font-weight: 511;
+    cursor: pointer;
+    background-color: rgb(180, 152, 206);
+    border-radius: 8px;
+    margin-top:18px;
+    display: flex;
+    text-align: center;
+}
+.button-2{
+    transform: translate(-85px,34px);
+    background-color: rgb(16, 247, 182);
+    font-size: 14px;
+    font-weight: 502;
+    width: 55px;
+    padding: 5px;
+    border-radius: 6px;
+    outline: none;
+} 
+.child-21{
+    justify-content: center;
+    align-items: center;
+}  
+.sub-child-21 input, .sub-child-22 input{
+    transform: translate(166px,2px);
+}
+.sub-child-21 textarea,.sub-child-22  textarea{
+    transform: translate(-86px,48px);
+}
+
+
+/*Employment css*/
+.parent-3{
+    transform: translate(0px,40px);
+}
+.child-31,.child-32,.child-33{
+    width: 231px;
+    height: 42px;
+    transform: translate(158px,45px);
+    font-size: 14px;
+    font-weight: 511;
+    cursor: pointer;
+    background-color: rgb(180, 152, 206);
+    border-radius: 8px;
+    margin-top:22px;
+    display: flex;
+    text-align: center;
+}
+.child-33{
+    width: 10%;
+}
+.button-3{
+    transform: translate(-78px,56px);
+    background-color: rgb(16, 247, 182);
+    font-size: 14px;
+    font-weight: 502;
+    width: 55px;
+    padding: 5px;
+    border-radius: 6px;
+    outline: none;
+}
+.sub-child-31 input, .sub-child-32 input ,.sub-child-33 input{
+    transform: translate(172px,26px);
+}
+.sub-child-31 textarea,.sub-child-32  textarea,.sub-child-33  textarea{
+    transform: translate(-80px,70px);
+}
+/*Miscellaneous css*/
+.child-41,.child-42,.child-43,.child-44,.child-45{
+    width: 231px;
+    height: 42px;
+    transform: translate(161px,48px);
+    font-size: 14px;
+    font-weight: 511;
+    cursor: pointer;
+    background-color: rgb(180, 152, 206);
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-4{
+    transform: translate(0px,62px);
+}
+.child-42{
+    display: flex;
+    text-align: center;
+}
+.sub-child-41 input, .sub-child-42 input,
+.sub-child-43 input,.sub-child-44 input,.sub-child-45 input{
+    transform: translate(166px,28px);
+}
+.sub-child-41 textarea,.sub-child-42 textarea,.sub-child-43 textarea,
+.sub-child-44 textarea,.sub-child-45 textarea{
+    transform: translate(-85px,77px);
+}
+.button-4{
+    transform: translate(-84px,62px);
+    background-color: rgb(16, 247, 182);
+    font-size: 14px;
+    font-weight: 502;
+    width: 55px;
+    padding: 5px;
+    border-radius: 6px;
+    outline: none;
 }
