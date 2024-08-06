@@ -1,4 +1,6 @@
 import {  useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import Addresses from "./Addresses"
 import Employment from "./Employment"
 import Miscellaneous from "./Miscellaneous"
@@ -76,7 +78,7 @@ const Education =()=>
             <p style={{color:"tomato"}}>* Only pdf accept's here</p>
             <section>
                   <div className="parent">
-                    <div className="parent-1" onClick={handileshow}>Education <span className="arrow-down" ></span>  </div>
+                    <div className="parent-1" onClick={handileshow}>Education <p><FontAwesomeIcon icon={faCaretDown} style={{paddingLeft:25}} width={16} /></p> </div>
                     
                     {
                         show && <div>

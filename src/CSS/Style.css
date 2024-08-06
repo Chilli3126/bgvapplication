@@ -59,15 +59,7 @@ textarea{
     border-radius: 6px;
     outline: none;
 }
-/* DownArrowButton.css */
-.arrow-down {
-    width: 1px;
-    height: 1px;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 10px solid black;
-    transform: translate(22px,5px);
-  }
+
   /* Label css*/
 .box{
    transform: translate(424px,22px);

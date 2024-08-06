@@ -1,5 +1,6 @@
 import { useState } from "react"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 const Addresses =()=>
 {
         
@@ -41,7 +42,7 @@ const Addresses =()=>
     return(<>
 
             <div>
-                <div className="parent-2"  onClick={handileshow2}>Addresses <span className="arrow-down" ></span></div>
+                <div className="parent-2"  onClick={handileshow2}>Addresses <p><FontAwesomeIcon icon={faCaretDown} style={{paddingLeft:25}} width={16} /></p></div>
                         {
                            show2 && <div>
                              <div  className="child-21"  onClick={()=>sethide21(!hide21)}>Permanent Address as per Adhar</div>

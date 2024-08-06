@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 const Employment =()=>
 {
@@ -39,9 +41,17 @@ const Employment =()=>
              const [hide32,sethide32]= useState() 
              const [hide33,sethide33]= useState() 
 
+     const [buttons, setButtons] = useState([]); 
+      const addButton = () => {
+            // Generate a new button ID or label
+            if (buttons.length >= 3) return; //  3 buttons
+          const newButtonId = buttons.length + 1;
+        setButtons([...buttons, `Button ${newButtonId}`]);
+      };      
+
     return(<>
             <section>
-                 <div className="parent-3"  onClick={handileshow3}>Employment <span className="arrow-down" ></span></div>
+                 <div className="parent-3"  onClick={handileshow3}>Employment <p><FontAwesomeIcon icon={faCaretDown} style={{paddingLeft:12}} width={16} /></p></div>
                         {
                            show3 && <div>
 
@@ -65,16 +75,20 @@ const Employment =()=>
                                     </div> 
                                     : null
                                 }  
-                                 <div  className="child-33"  onClick={()=>sethide33(!hide33)}>+ADD Employer</div>
-                                {
-                                    hide33 ? 
-                                    <div className="sub-child-33" >   
-                                        <input   type="file" accept=".pdf"name="file" value={file.file}  onChange={handilefile}/>
-                                        <textarea row={2} type="text" name="text" value={file.text}  onChange={handilefile} placeholder="Comments"></textarea>
-                                        <button className="button-3" type="button" onClick={handleSubmit}>Save</button>    
+                                 <div  className="child-33" onClick={addButton}>+ADD Employer</div>
+                                 
+                                 <div>
+                                    {buttons.map(( index) => (
+                                    <div>
+                                         <div className="child-32" >Previous employer Experence/Relieving letter</div>
+                                         <div className="sub-child-33" >   
+                                             <input type="file" accept=".pdf"name="file" value={file.file}  onChange={handilefile} />
+                                             <textarea row={2} type="text" name="text" value={file.text} onChange={handilefile} placeholder="Comments"></textarea>
+                                             <button className="button-3" type="button" key={index} onClick={handleSubmit}>  Save</button>    
+                                         </div>
                                     </div> 
-                                    : null
-                                }  
+                                    ))}
+                                </div>
                              </div>
                         }
             </section>
