@@ -43,7 +43,8 @@ a{
     justify-content: center;
     align-items: center;
 }
-input{
+.sub-child-1 input, .sub-child-2 input,
+.sub-child-3 input,.sub-child-4 input{
     transform: translate(169px,-42px);
 }
 textarea{

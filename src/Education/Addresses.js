@@ -25,7 +25,7 @@ const Addresses =()=>
       };
       
 
-    const [show2, setshow2] =useState()
+    const [show2, setshow2] =useState();
     const handileshow2=()=>{
         if(show2 == true)
         {

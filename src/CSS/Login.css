@@ -1,0 +1,167 @@
+
+body{
+    background-color: blueviolet;
+    width:450px;
+    margin-top: 65px;
+}
+.Container{
+    background-color:#efefef;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.Container{
+    flex-direction: column;
+    margin: auto;
+    margin-top: 45px;
+    padding-bottom:28px ;
+    display: flex;
+}
+h2{
+    color: #3c009d;
+    font-size: 28px;
+    font-weight: 652;
+}
+.Inputs{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.Input-child{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width:295px;
+    height:54px;
+    background: #d6cfcf;
+    border-radius: 8px;
+}
+.img {
+    margin: 0px 20px;
+}
+.Input-child input{
+    height: 32px;
+    width: 198px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px; 
+}
+.Forget-password{
+    padding-left: 18px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+.Submit-container{
+    display: flex;
+    margin: 10px auto;
+    margin-left: 69px;
+}
+.Submit-container1{
+    display: flex;
+    margin-left: 69px;
+    transform: translateY(-25px);
+}
+.Submit, .Submit1{
+    width: 150px;
+    height: 38px;
+    background: #4c00b4;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 527;
+    border-radius:18px;
+    border: none;
+}
+.Login-container{
+    margin: 0px auto; 
+    transform: translateY(-18px);
+    font-size: 18px;
+}
+p{
+    margin-left: 12px;
+    transform: translateY(-15px);
+    font-size: 18px;
+}
+.Input-child span{
+    position: absolute;
+    transform: translate(6px,36px);
+}
+/* forget password css*/
+#popup{
+    display: none;
+    background-color:rgba(0, 0, 0, .9) ;
+    border-radius: 12px;
+    width: 450px;
+    height: 467px;
+    position: fixed;
+    transform: translate(-225px,-435px);
+}
+#popup:target{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.Content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+    color: antiquewhite; 
+    padding: 50px;  
+}
+.close{
+    position: absolute;
+    color: antiquewhite;
+    font-size: 28px;
+    margin-left: 415px;
+}
+.Content-child{
+    width: 50%;
+    margin-left: 34px;
+    padding: 8px;
+}
+.Content-child input{
+    padding: 10px;
+    width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.Done-container{
+    display: flex;
+    margin: 40px auto;
+    margin-left: 100px;
+}
+.Done{
+    width: 144px;
+    height: 38px;
+    background: #7e30ea;
+    color:#fff;
+    font-size: 22px;
+    font-weight: 527;
+    border-radius:18px;
+    border: none;
+}
+/* Validation css*/
+.error{
+    color: tomato;
+    position:absolute;
+    transform: translate(10px,35px);
+}
+.Succes{
+    color: green;
+    position:absolute;
+    transform: translate(1px,205px);
+}
+.Password{
+    color: green;
+    position: absolute;
+    transform: translate(38px,152px);
+}
+.Invalid{
+    position: absolute;
+    transform: translate(1px,128px);
+}

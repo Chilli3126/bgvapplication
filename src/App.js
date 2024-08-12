@@ -1,13 +1,13 @@
 
 import './App.css';
-import Education from './Education/Education.js';
 import Home from './Education/Home.js';
+import Login from './Education/Login.js';
 
 
 function App() {
   return (
     <div className="App">
-        <Home />
+        <Login />
     </div>
   );
 }

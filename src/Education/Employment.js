@@ -13,7 +13,7 @@ const Employment =()=>
             ...file,
             [name]: value
             });
-            // console.log(e.target.value)
+            // console.log(name, value ))
         }
        //Handle input submit 
     const handleSubmit = (e) => {
