@@ -51,7 +51,7 @@ const Employment =()=>
 
     return(<>
             <section>
-                 <div className="parent-3"  onClick={handileshow3}>Employment <p><FontAwesomeIcon icon={faCaretDown} style={{paddingLeft:12}} width={16} /></p></div>
+                 <div className="parent-3"  onClick={handileshow3}>Employment <p className="FontAwesomeIcon"><FontAwesomeIcon icon={faCaretDown} /></p></div>
                         {
                            show3 && <div>
 

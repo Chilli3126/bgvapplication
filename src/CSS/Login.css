@@ -1,7 +1,7 @@
 
 body{
     background-color: blueviolet;
-    width:450px;
+    width:420px;
     margin-top: 65px;
 }
 .Container{
@@ -46,7 +46,7 @@ h2{
     outline: none;
     border: none;
     border-radius: 6px;
-    font-size: 15px; 
+    font-size: 16px; 
 }
 .Forget-password{
     padding-left: 18px;
@@ -147,7 +147,7 @@ a{
 }
 /* Validation css*/
 .error{
-    color: tomato;
+    color: red;
     position:absolute;
     transform: translate(10px,35px);
 }

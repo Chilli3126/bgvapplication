@@ -69,6 +69,8 @@ const Education =()=>
 
 
     return(<>
+
+    <div className="body">
             <div className="Homepage" >
                <h4><a href="">Click </a> for BGV form</h4>
                <h4><a href="">Click</a> for Address consent form</h4>
@@ -78,7 +80,7 @@ const Education =()=>
             <p style={{color:"tomato"}}>* Only pdf accept's here</p>
             <section>
                   <div className="parent">
-                    <div className="parent-1" onClick={handileshow}>Education <p><FontAwesomeIcon icon={faCaretDown} style={{paddingLeft:25}} width={16} /></p> </div>
+                    <div className="parent-1" onClick={handileshow}>Education <p className="FontAwesomeIcon"><FontAwesomeIcon icon={faCaretDown} style={{paddingLeft:35}} /></p> </div>
                     
                     {
                         show && <div>
@@ -145,6 +147,7 @@ const Education =()=>
                         <Miscellaneous />
                     </div>
             </section>
+        </div>      
     </>)
 }
 export default Education;

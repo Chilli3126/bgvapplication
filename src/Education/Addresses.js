@@ -42,7 +42,7 @@ const Addresses =()=>
     return(<>
 
             <div>
-                <div className="parent-2"  onClick={handileshow2}>Addresses <p><FontAwesomeIcon icon={faCaretDown} style={{paddingLeft:25}} width={16} /></p></div>
+                <div className="parent-2"  onClick={handileshow2}>Addresses <p className="FontAwesomeIcon"><FontAwesomeIcon icon={faCaretDown} style={{paddingLeft:30}} /></p></div>
                         {
                            show2 && <div>
                              <div  className="child-21"  onClick={()=>sethide21(!hide21)}>Permanent Address as per Adhar</div>

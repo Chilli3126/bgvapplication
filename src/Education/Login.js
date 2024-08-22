@@ -1,13 +1,17 @@
 import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React ,{ useState } from 'react';
+import { useNavigate } from 'react-router';
 
-const Login = () => {
+const Login = ({setislogin}) => {
+    	
+
     const [isLogin, setIsLogin] = useState(true);
      
     const [formdata,setformdata] =useState({Username:'',Email:'' ,Password:''})
     const [formerror,setformerror]=useState({})
     const [successMessage, setSuccessMessage] = useState('');
+
 
 
     const Handlechange =(e)=>
@@ -120,9 +124,11 @@ const validemail = (email) => {
     }
 
 //Login Validation
+
   const [form,setform] =useState({Email:'',Password:''})
   const [loginerror, setloginerror] = useState({});
   const [successMsg, setsuccessMsg] = useState('');
+  const Navigate =useNavigate();
 
   const HandleInput=(e)=>
   {
@@ -134,6 +140,10 @@ const validemail = (email) => {
         const dummycandidate = {
             Email: 'user@example.com',
             Password: 'password123',
+        };
+        const Admin ={
+            Email:'Admin@example.com',
+            Password:'Admin123',
         };
 
          // Basic validation function
@@ -167,6 +177,19 @@ const validemail = (email) => {
                     {
                         setsuccessMsg('');
                         setloginerror({});
+                        alert(" User login successfully");
+                        setislogin(true)// Redirect to the home page
+                        Navigate('/Home')
+    
+                    }
+                    else if(form.Email === Admin.Email &&
+                        form.Password === Admin.Password)
+                    {
+                        setsuccessMsg('');
+                        setloginerror({});
+                        setislogin(true)// Redirect to the home pag
+                        alert(" Admin login successfully");
+                        Navigate('/Addresses')
                     }
                     else {
                         setloginerror({ candidate: 'Invalid email or password' });
@@ -201,7 +224,7 @@ const validatepass=()=>
 
         if (!newPassword) {
         newErrors.newPassword = '';
-        } else if (newPassword.length < 6) {  // Example: minimum length check
+        } else if (newPassword.length < 6) {  //  minimum length check
         newErrors.newPassword = 'Password must be at least 6 char long';
         }
             if (!confirmPassword) {
@@ -228,9 +251,14 @@ const HandleSubmit1=(e)=>
         else {
             setsuccess('');
           }
-    }   
+    }
+    
+ 
 
+  
     return (
+        <div className=''>
+
         <div className="Container">
                 <div>
                      <h2> {isLogin ? 'Login' : 'Sign Up'}</h2>
@@ -295,7 +323,7 @@ const HandleSubmit1=(e)=>
                                 {loginerror.candidate && <p style={{ color: 'red' }}>{loginerror.candidate}</p>}
                                 </div>
                             <div className='Submit-container1'>
-                                <button className='Submit1' type='submit'>Login</button>
+                                <button className='Submit1' type='submit' >Login</button>
                              </div>
 
                              <div className='Login-container'>
@@ -337,6 +365,7 @@ const HandleSubmit1=(e)=>
                     </form>
                         
         </div>
+    </div>
     );
 };
 

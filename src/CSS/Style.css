@@ -1,6 +1,11 @@
 body{
     margin: 0 auto;
-    width: 85%;
+}
+.body{
+    position: absolute;
+    width: 850px;
+    translate:-270px;
+    transform: translateY(-77px);
 }
 /*Home css*/
 .Homepage{
@@ -59,6 +64,10 @@ textarea{
     padding: 5px;
     border-radius: 6px;
     outline: none;
+}
+.FontAwesomeIcon{
+    padding-left: 8px;
+    padding-top: 34px;
 }
 
   /* Label css*/

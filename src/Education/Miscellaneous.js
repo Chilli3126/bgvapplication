@@ -45,7 +45,7 @@ const Miscellaneous =()=>
 
     return(<>
         <section>
-            <div className="parent-4"  onClick={handileshow4}>Miscellaneous <p><FontAwesomeIcon icon={faCaretDown} style={{paddingLeft:12}} width={16} /></p></div>
+            <div className="parent-4"  onClick={handileshow4}>Miscellaneous <p className="FontAwesomeIcon"><FontAwesomeIcon icon={faCaretDown}  /></p></div>
                     {
                           show4 && <div>
                              <div  className="child-41"  onClick={()=>sethide41(!hide41)}>Form16 last 3Yers</div>
