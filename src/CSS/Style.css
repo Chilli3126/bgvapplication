@@ -1,11 +1,11 @@
 body{
     margin: 0 auto;
 }
-.body{
+.Baground{
     position: absolute;
     width: 850px;
-    translate:-270px;
-    transform: translateY(-77px);
+    translate:220px;
+    transform: translateY(-27px);
 }
 /*Home css*/
 .Homepage{
@@ -18,6 +18,7 @@ a{
     text-decoration: none;
 }
 /* Education css*/
+
 .parent{
     margin: 10px auto;
 }
@@ -25,7 +26,7 @@ a{
     width: 30%;
     height: 65px;
     margin: 5px;
-    background-color: rgb(180, 152, 206);
+    background-color: rgb(174, 101, 242);
     border-radius: 10px;
     font-size: 28px;
     font-weight: 504;
@@ -37,7 +38,7 @@ a{
 .child-1,.child-2,.child-3,.child-4{
     width:231px;
     height: 42px;
-    transform: translate(158px,-22px);
+    transform: translate(158px,-10px);
     font-size: 14px;
     font-weight: 511;
     cursor: pointer;
@@ -50,13 +51,13 @@ a{
 }
 .sub-child-1 input, .sub-child-2 input,
 .sub-child-3 input,.sub-child-4 input{
-    transform: translate(169px,-42px);
+    transform: translate(169px,-30px);
 }
 textarea{
-    transform: translate(-85px,2px);
+    transform: translate(-85px,14px);
 }
 .button-1{
-    transform: translate(-84px,-13px);
+    transform: translate(-84px,1px);
     background-color: rgb(16, 247, 182);
     font-size: 14px;
     font-weight: 502;
@@ -70,21 +71,36 @@ textarea{
     padding-top: 34px;
 }
 
+.sub-file-error1 {
+    position: absolute;
+    transform: translate(430px,-88px);
+    color: red;
+}
+.sub-textarea-error1{
+    position: absolute;
+    transform: translate(430px,-60px);
+    color: red;
+}
+.sub-success-msg1{
+    position: absolute;
+    transform: translate(420px,-55px);
+}
+
   /* Label css*/
 .box{
-   transform: translate(424px,22px);
+   transform: translate(424px,36px);
 }
 .box1{
-    transform: translate(-60px,5px);
+    transform: translate(-60px,6px);
     width: 36px;
     height: 18px;
 }
   /* bluerr css*/
-  .blur-container {
-    transition: filter 0.8s ease; /* Smooth transition for blur effect */
-  }
-  .blurred {
-    filter: blur(6px); /* Adjust the blur radius as needed */
+  
+  .child-1.blurred {
+    filter: blur(5px);
+    /* Optional: to ensure it’s clear that the section is blurred, add a background color or opacity */
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
 
@@ -126,6 +142,21 @@ textarea{
     transform: translate(-86px,48px);
 }
 
+.sub-file-error {
+    position: absolute;
+    transform: translate(430px,-38px);
+    color: red;
+}
+.sub-textarea-error{
+    position: absolute;
+    transform: translate(430px,-8px);
+    color: red;
+}
+.sub-success-msg{
+    position: absolute;
+    transform: translate(440px,-15px);
+}
+
 
 /*Employment css*/
 .parent-3{
@@ -163,6 +194,32 @@ textarea{
 .sub-child-31 textarea,.sub-child-32  textarea,.sub-child-33  textarea{
     transform: translate(-80px,70px);
 }
+
+.sub-file-error3 {
+    position: absolute;
+    transform: translate(430px,-20px);
+    color: red;
+}
+.sub-textarea-error3{
+    position: absolute;
+    transform: translate(430px,5px);
+    color: red;
+}
+.sub-success-msg3{
+    position: absolute;
+    transform: translate(430px,8px);
+}
+.button-3-1{
+    transform: translate(-75px,56px);
+    background-color: rgb(16, 247, 182);
+    font-size: 14px;
+    font-weight: 502;
+    width: 36px;
+    padding: 5px;
+    border-radius: 6px;
+    outline: none;
+}
+
 /*Miscellaneous css*/
 .child-41,.child-42,.child-43,.child-44,.child-45{
     width: 231px;
@@ -202,4 +259,155 @@ textarea{
     padding: 5px;
     border-radius: 6px;
     outline: none;
+}
+.sub-file-error4 {
+    position: absolute;
+    transform: translate(430px,-20px);
+    color: red;
+}
+.sub-textarea-error4{
+    position: absolute;
+    transform: translate(430px,5px);
+    color: red;
+}
+.sub-success-msg4{
+    position: absolute;
+    transform: translate(430px,8px);
+}
+/*Submited-1 button css */
+.Submited-1{
+    background-color: blueviolet;
+    color: antiquewhite;
+    border: none;
+    font-size: 18px;
+    font-weight: 651;
+    width: 95px;
+    height: 44px;
+    padding: 12px;
+    transform: translate(160px,90px);
+    border-radius: 8px;
+}
+.Submited-1:hover{
+    background-color: rgb(199, 251, 121);
+    color: black;
+}
+/*Success page css*/
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
+.Success-page p{
+    position: absolute;
+    transform: translate(350px,250px);
+    font-size: 26px;
+}
+.Success-page{
+    color: rgba(63, 172, 30, 0.6);
+    margin-left: 60px;
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 90%;
+    height: 642px;
+    border-radius: 8px;
+}
+.close-1{
+    position: absolute;
+    font-size: 32px;
+    font-weight: 785;
+    transform: translate(1210px,5px);
+    color: black;
+}
+.Thumb-Hand{
+    font-size: 95px;
+    position: absolute;
+    transform: translate(480px,150px);
+    color: rgb(53, 58, 63);
+}
+.error-message {
+    position: absolute;
+    color: red;
+    font-size: 1.2em;
+    transform: translate(1px,60px);
+}
+/*Admin page css*/
+/*Education css*/
+.Download-file{
+    width: 34px;
+    position: relative;
+    height: 30px;
+    color: rgb(11, 3, 18);
+    background-color: beige;
+    cursor: pointer;
+    transform: translate(40px,6px);
+    font-size: 18px;
+    border-radius: 8px;
+}
+.Download-here{
+    position: relative;
+   transform: translate(172px,-5px);
+   font-size: 16px;
+   font-weight: 584;
+   cursor: pointer;
+}
+.arrow{
+    position: absolute;
+    margin-left:15px;
+    font-size: 25px;
+    font-weight: 524;
+    transform:translate(-10px,6px)
+}
+
+/*Address css*/
+
+.Download-here1{
+    position: relative;
+   transform: translate(172px,22px);
+   font-size: 16px;
+   font-weight: 584;
+}
+/*Miscellaneous css*/
+.Download-here2{
+    position: relative;
+   transform: translate(182px,52px);
+   font-size: 16px;
+   font-weight: 584;
+}
+/*Employment css*/
+.remove-button{
+    transform: translate(352px,28px);
+    width: 35px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+ }
+ .Download-here3{
+    position: relative;
+   transform: translate(162px,52px);
+   font-size: 16px;
+   font-weight: 584;
+}
+/*Logout button css*/
+.navbar{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(219, 217, 215);
+    height: 44px;
+}
+.Logout{
+  position: absolute;
+    transform: translate(1085px,7px);
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 684;
+    border-radius: 6px;
+    background-color: rgb(76, 36, 21);
+    color: #efefef;
+    border: none;
+}
+.Logout:hover {
+    color: black;
+    background-color:beige;
 }

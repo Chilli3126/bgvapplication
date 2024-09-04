@@ -1,11 +1,13 @@
 
 import './App.css';
-import Login from './Education/Login.js';
-import Home from './Education/Home.js';
+import Login from './Login/Login.js';
 import { Navigate, Route, Router, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
-import Addresses from './Education/Addresses.js';
+
+import Documents from './User/Documents.js';
+import SuccesPage from './User/SuccesPage.js';
+import Document from './Admin/Document.js';
 
 
 
@@ -17,16 +19,17 @@ function App() {
   < BrowserRouter>
     <Routes>
       <Route>
+      
       <Route path='/' element={<Login setislogin={setislogin} />} />
-      <Route path='/Home' element={islogin ? <Home /> : <Navigate to="/" />}/> 
-      <Route path='/addresses' element={islogin ? <Addresses /> : <Navigate to="/" />}/> 
+      <Route path='/Documents' element={islogin ? <Documents /> : <Navigate to="/" />}/> 
+      <Route path='/Document' element={islogin ? <Document /> : <Navigate to="/" />}/> 
+      <Route path="/success" element={<SuccesPage />} />
+    
       </Route>
     </Routes>
-    </BrowserRouter>
-
-
-   
+    </BrowserRouter> 
   );
 }
+
 
 export default App;

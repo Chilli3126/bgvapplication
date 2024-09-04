@@ -179,7 +179,7 @@ const validemail = (email) => {
                         setloginerror({});
                         alert(" User login successfully");
                         setislogin(true)// Redirect to the home page
-                        Navigate('/Home')
+                        Navigate('/Documents')
     
                     }
                     else if(form.Email === Admin.Email &&
@@ -189,7 +189,7 @@ const validemail = (email) => {
                         setloginerror({});
                         setislogin(true)// Redirect to the home pag
                         alert(" Admin login successfully");
-                        Navigate('/Addresses')
+                        Navigate('/Document')
                     }
                     else {
                         setloginerror({ candidate: 'Invalid email or password' });
@@ -257,7 +257,7 @@ const HandleSubmit1=(e)=>
 
   
     return (
-        <div className=''>
+        <div className='Loginpage'>
 
         <div className="Container">
                 <div>
@@ -365,8 +365,16 @@ const HandleSubmit1=(e)=>
                     </form>
                         
         </div>
+            <div className='AdminLogin'>
+                <h4>Email: 'user@example.com',</h4>
+                <p>Password: 'password123',</p>
+                <h4>Email:'Admin@example.com'</h4>
+                <p>Password:'Admin123',</p>
+            </div>
+    
     </div>
     );
+
 };
 
 export default Login;

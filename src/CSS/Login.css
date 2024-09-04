@@ -1,14 +1,13 @@
 
 body{
-    background-color: blueviolet;
-    width:420px;
-    margin-top: 65px;
+    margin: 0px auto;
 }
 .Container{
     background-color:#efefef;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    width: 450px;
 }
 .Container{
     flex-direction: column;
@@ -164,4 +163,9 @@ a{
 .Invalid{
     position: absolute;
     transform: translate(1px,128px);
+}
+/*Example css*/
+.AdminLogin{
+    position: absolute;
+    transform: translate(55px,-398px);
 }
