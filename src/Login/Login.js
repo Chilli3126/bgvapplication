@@ -368,8 +368,8 @@ const HandleSubmit1=(e)=>
             <div className='AdminLogin'>
                 <h4>Email: 'user@example.com',</h4>
                 <p>Password: 'password123',</p>
-                <h4>Email:'Admin@example.com'</h4>
-                <p>Password:'Admin123',</p>
+                <h4>Email: 'Admin@example.com'</h4>
+                <p>Password: 'Admin123',</p>
             </div>
     
     </div>

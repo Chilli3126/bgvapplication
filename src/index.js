@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import './CSS/Style.css';
 import './CSS/Login.css';
+import './CSS/Hakward.css';
+import './CSS/Services.css'
+import './CSS/Products.css'
+import'./CSS/AboutUs.css'
+import './CSS/Career.css'
+import './CSS/ContactUs.css';
+import './CSS/Services1.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

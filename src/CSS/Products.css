@@ -1,0 +1,305 @@
+/* HomeSection.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align text to the left */
+    min-height: 100vh;
+    background: linear-gradient(to right, #6d6d7a, #6a2f65);
+    color: rgb(244, 223, 223);
+    text-align: left;
+    padding: 20px 5%;
+  }
+  
+  .main-title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+    align-self: flex-start; /* Align title to the left */
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-align: right;
+    align-self: flex-end; /* Move paragraph to the right */
+    margin-top: 25px;
+    color: white;
+  }
+  
+  /********** Responsive Design **********/
+  @media (max-width: 668px) {
+    .main-title {
+        font-size: 2.8rem;
+        margin-left: 150px;
+    }
+  
+    .sub-title {
+        font-size: 2.5rem;
+    }
+  
+    .description p {
+        font-size: 1rem;
+        max-width: 100%;
+        text-align: right;
+      transform: translate(2px,40px);
+    }
+  }
+  
+  /**********Home page 2 css start*********************/
+  /* HomeSection.css */
+.home-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #13aa82, #136450);
+    color: white;
+    padding: 20px 5%;
+    height: 615px;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Align image to the left */
+  }
+  
+  .image-container img {
+    max-width: 135%;
+    height:auto;
+    transform: translate(-65px,1px);
+  }
+  
+  .text-container {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .main-title-1 {
+    font-size: 4rem;
+    font-weight: bold;
+    transform: translate(1px,50px);
+  }
+  
+  .sub-title-1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+  }
+  .description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px 0;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 45px;
+  }
+  
+  .button-container p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px; /* Space before buttons */
+    color: white;
+  }
+  .Img {
+    font-size: 40px;
+  }
+  .app-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: black; /* Matching button background */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transform: translate(1px,-10px);
+  }
+  
+  .app-button:hover {
+    background-color: #333; /* Slightly lighter on hover */
+  }
+  /********** Responsive Design **********/
+  @media (max-width: 668px) {
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .image-container img{
+      display: none;
+    }
+    .image-container {
+        justify-content: center;
+    }
+  .main-title-1, .sub-title-1{
+    font-size: 1.9rem;
+    transform: translate(42px,-20px);
+  }
+    .text-container {
+        text-align: center;
+        transform: translate(-140px,-26px);
+    }
+  
+    .button-container {
+        justify-content: center;
+    }
+    .app-button{
+      font-size: 5px;
+    }
+  }  
+  @media (max-width: 968px) {
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .image-container img{
+      display: none;
+    }
+    .image-container {
+        justify-content: center;
+    }
+  
+    .text-container {
+        text-align: center;
+        transform: translate(-140px,-26px);
+    }
+  
+    .button-container {
+        justify-content: center;
+    }
+  }  
+  /*********Home page 2 css end********************/
+    /*********Home page3  css syart********************/
+
+    /* HomePage.css */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 100px 10%;
+    background: linear-gradient(to right, #d4e157, #8bc34a); /* Green gradient */
+  }
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 56px;
+    color: #1b5e20;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 2;
+  }
+  
+  .hero-image img {
+    width: 1000px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 80px 5%;
+    }
+  
+    .hero-content h1 {
+      max-width: 100%;
+      font-size: 1.5rem;
+    }
+    .hero-content p{
+      font-size: 1.2rem;
+      width: 180%;
+      transform: translate(-150px,2px);
+    }
+    .hero-section{
+      height: auto;
+      max-height: fit-content;
+    }
+    .hero-image {
+      width: 60%;
+    }
+  }
+  
+    /*********Home page 3 css end********************/
+    /*********Home page 4 css start********************/
+.hero-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 100px 10%;
+    background: linear-gradient(to right, #166e41, #98dfc3); /* Green gradient */
+    gap: 30px;
+  }
+  .hero-content-1 {
+    max-width: 50%;
+  }
+  
+  .hero-content-1 h1 {
+    font-size: 62px;
+    color: #1b5e20;
+    font-weight: bold;
+  }
+  
+  .hero-content-1 p {
+    font-size: 22px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 2;
+  
+  }
+  
+  .hero-image-1 img {
+    width: 1000px;
+    max-width: 110%;
+    border-radius: 10px;
+   transform: translate(-120px,2px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section-1 {
+      flex-direction: column;
+      text-align: center;
+      padding: 80px 5%;
+    }
+  
+    .hero-content-1 {
+      max-width: 100%;
+    }
+    .hero-content-1 h1{
+      font-size: 1.9rem;
+    }
+    .hero-section-1{
+      height: auto;
+      max-height: fit-content;
+    }
+    .hero-image-1{
+      width: 60%;
+      margin-left: 80px;
+    }
+  }
+  
+    /*********Home page 4 css end********************/

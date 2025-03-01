@@ -1,0 +1,416 @@
+/* HomePage.css */
+
+.homepage-container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  .about-section-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  }
+  
+  .about-content-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    padding: 5% 10%;
+  }
+  .about-content-1 h1 {
+    max-width: 75%;
+    font-size: 4.1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: white;
+    
+  }
+  .about-content-1 p{
+    max-width: 70%;
+  text-align: right;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: white;
+  transform: translate(35px,200px);
+
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content-1 h1 {
+      font-size: 2rem;
+    }
+  
+    .about-content-1 p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-content-1 h1 {
+      font-size: 1.5rem;
+    }
+  
+    .about-content-1 p {
+      font-size: 0.9rem;
+    }
+  }
+  /***Home page 2 css start******/
+
+  .homepage-container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+    color: #dbdee4;
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .text-content {
+    width: 50%;
+  }
+  
+  .text-content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+  
+  .text-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  .image-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content, .image-content {
+      width: 100%;
+    }
+  
+    .text-content h1 {
+      font-size: 2rem;
+    }
+  
+    .text-content p {
+      font-size: 1rem;
+    }
+    .image-content{
+      display: none;
+    }
+  }
+    /***Home page 2 css end******/
+    /***Home page 3 css start******/
+  /* HomePage.css */
+.homepage-container-3 {
+    font-family: Arial, sans-serif;
+    background-color: #dbdee4;
+    padding: 50px 5%;
+  }
+  
+  /* Services Section */
+  .services-section {
+    text-align: center;
+  }
+  
+  .services-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .services-section p {
+    font-size: 1.2rem;
+    max-width: 700px;.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Columns */
+    grid-template-rows: repeat(2, auto); /* 2 Rows */
+    gap: 50px 80px; /* Adjust spacing between cards */
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto; /* Center the grid */
+}
+
+    margin: 0 auto 30px;
+  }
+  .services-section-1 p{
+    font-size: 1.2rem;
+    max-width: 700px;
+    transform: translate(1px,45px);
+  }
+  
+  /* Grid Layout: 4 Columns & 2 Rows */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 Columns */
+    grid-template-rows: repeat(2, auto); /* 2 Rows */
+    gap: 50px 80px; /* Adjust spacing between cards */
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto; /* Center the grid */
+}
+
+  
+  /* Service Card */
+  .service-card {
+    text-align: center;
+    width: 220px; /* Fixed width for uniformity */
+        background: none !important; /* Removes white background */
+        box-shadow: none; /* Removes shadow if any */      
+  }
+  
+  .service-card img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: none;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .service-card h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on small screens */
+      gap: 30px; /* Adjust spacing */
+    }
+  }
+  @media (max-width: 768px) {
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+      gap: 20px; /* Adjust spacing */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+  }
+    /***Home page 3 css end******/
+    /***Home page 4 css start******/
+
+    /* Section Layout */
+.approachSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+  }
+  
+  /* Text Styling */
+  .content {
+    width: 50%;
+  }
+  
+  .content h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #111;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  /* Image Styling */
+  .image {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .approachSection {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content,
+    .image {
+      width: 100%;
+    }
+  
+    .image {
+      justify-content: center;
+    }
+  }  
+    /***Home page 4 css end******/
+     /***Home page 5 css start******/
+     /* Background and Section Styling */
+.valuesSection {
+    background-color: #e6ecf4; /* Light blue-gray (similar to your image) */
+    padding: 50px;
+    text-align: left;
+    border-radius: 10px;
+    height:680px ;
+  }
+  
+  /* Heading */
+  .valuesSection h2{
+    font-size: 72px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 20px;
+  }
+  
+  /* Introduction Text */
+  .intro {
+    font-size: 1.4rem;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  
+  /* Values List */
+  .valuesList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Individual Value Item */
+  .valueItem {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.4;
+    margin-left: 45px;
+  }
+  
+  /* Icon Styling */
+  .icon-1 {
+    color: #178c48; /* Green Check Icon */
+    font-size: 2.5rem;
+    margin-right: 10px;
+  }
+  
+  /* Footer Text */
+  .footerText {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 668px) {
+    .valuesSection {
+      text-align: center;
+    }
+    .valuesSection h2
+    {
+      font-size: 35px;
+    }
+    .valueItem {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 14px;
+    }
+    .intro{
+      font-size: 14px;
+    }
+    .valueIsList{
+      transform: translate(1px,-30px);
+    }
+    .icon-1{
+      font-size:1.5rem ;
+    }
+    .footerText{
+      font-size: 1.1rem;
+      transform: translate(1px,-16px);
+    }
+  }
+  @media (max-width: 968px) {
+    .valuesSection {
+      text-align: center;
+    }
+    .valuesSection h2
+    {
+      font-size: 45px;
+    }
+    .valueItem {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 18px;
+    }
+    .intro{
+      font-size: 18px;
+    }
+    .valueIsList{
+      transform: translate(1px,-30px);
+    }
+    .icon-1{
+      font-size:1.5rem ;
+    }
+    .footerText{
+      font-size: 1.1rem;
+      transform: translate(1px,-35px);
+    }
+  }  
+      /***Home page 5 css end******/
